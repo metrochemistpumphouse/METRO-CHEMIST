@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#083b73">
+  <meta name="description" content="Metro Chemist, Andheri East Mumbai. 24/7 pharmacy, medicine enquiries and home delivery.">
+  <title>Metro Chemist | 24/7 Pharmacy Mumbai</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .hero-bg {
+      background:
+        radial-gradient(circle at 15% 20%, #164e63 0%, transparent 35%),
+        linear-gradient(135deg, #06264b, #083b73, #172554);
+    }
+
+    .live-dot {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .35; }
+    }
+
+    .service-card {
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(15, 23, 42, .12);
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: 2px solid #16a34a;
+      outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- TOP BAR -->
+  <div class="bg-blue-950 text-white px-4 py-3">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row
+      justify-between gap-2 text-sm">
+
+      <div class="flex flex-wrap gap-4">
+        <span>
+          <i class="fa-regular fa-clock text-green-400 mr-2"></i>
+          Pharmacy Open 24 Hours
+        </span>
+
+        <span>
+          <i class="fa-solid fa-truck text-yellow-400 mr-2"></i>
+          Delivery: 9 AM - 11 PM
+        </span>
+      </div>
+
+      <a href="tel:+917400117557" class="hover:text-green-400">
+        <i class="fa-solid fa-phone mr-2"></i>
+        +91 7400117557
+      </a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white sticky top-0 z-50 shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 py-4
+      flex items-center justify-between gap-4">
+
+      <a href="#home" class="flex items-center gap-3">
+        <div class="bg-blue-700 text-white p-3 rounded-xl">
+          <i class="fa-solid fa-prescription-bottle-medical text-2xl"></i>
+        </div>
+
+        <div>
+          <h1 class="text-xl sm:text-2xl font-black text-blue-950">
+            METRO CHEMIST
+          </h1>
+
+          <p class="text-xs font-bold text-green-600">
+            YOUR 24/7 HEALTHCARE PARTNER
+          </p>
+        </div>
+      </a>
+
+      <div class="hidden lg:flex gap-6 font-semibold text-sm">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#order" class="hover:text-blue-600">Order Medicines</a>
+        <a href="#about" class="hover:text-blue-600">About Us</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+
+      <a href="https://wa.me/917400117557?text=Hello%20Metro%20Chemist%2C%20I%20want%20to%20order%20medicines."
+        target="_blank" rel="noopener noreferrer"
+        class="bg-green-600 hover:bg-green-700 text-white
+        px-4 py-3 rounded-full font-bold text-sm">
+
+        <i class="fa-brands fa-whatsapp mr-1"></i>
+        <span class="hidden sm:inline">Order Now</span>
+        <span class="sm:hidden">Order</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-bg text-white">
+    <div class="max-w-7xl mx-auto px-4 py-16 md:py-24
+      grid lg:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <span class="inline-block bg-green-500/20 text-green-300
+          px-4 py-2 rounded-full text-xs font-bold mb-5">
+          <span class="live-dot inline-block w-2 h-2
+            bg-green-400 rounded-full mr-2"></span>
+          OPEN DAY & NIGHT
+        </span>
+
+        <h2 class="text-4xl md:text-6xl font-black leading-tight">
+          Your Trusted Pharmacy,
+          <span class="text-green-400">Open 24/7</span>
+        </h2>
+
+        <p class="mt-6 text-lg text-blue-100 leading-8">
+          Get medicines and healthcare essentials from Metro Chemist,
+          Andheri East, Mumbai. Contact us to check availability,
+          pricing and home delivery options.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+
+          <a href="#order"
+            class="bg-white text-blue-950 text-center
+            px-7 py-4 rounded-xl font-bold hover:bg-blue-100">
+            <i class="fa-solid fa-file-prescription mr-2"></i>
+            Order Medicines
+          </a>
+
+          <a href="https://maps.app.goo.gl/ZR4qx3wxrhGaEWKM7"
+            target="_blank" rel="noopener noreferrer"
+            class="border border-white/40 bg-white/10
+            text-center px-7 py-4 rounded-xl font-bold
+            hover:bg-white/20">
+            <i class="fa-solid fa-location-dot mr-2 text-green-400"></i>
+            Get Directions
+          </a>
+        </div>
+
+        <div class="mt-8 flex flex-wrap gap-5 text-sm text-blue-100">
+          <span><i class="fa-solid fa-check text-green-400 mr-2"></i>
+            Prescription Support</span>
+          <span><i class="fa-solid fa-check text-green-400 mr-2"></i>
+            Generic Medicines</span>
+          <span><i class="fa-solid fa-check text-green-400 mr-2"></i>
+            Home Delivery</span>
+        </div>
+      </div>
+
+      <!-- QUICK CONTACT CARD -->
+      <div class="bg-white/10 border border-white/20
+        rounded-3xl p-6 md:p-8">
+
+        <h3 class="text-2xl font-extrabold mb-6">
+          How Can We Help?
+        </h3>
+
+        <a href="#order"
+          class="flex items-center gap-4 bg-white/10
+          hover:bg-white/20 p-4 rounded-xl mb-4">
+          <i class="fa-solid fa-prescription text-2xl text-green-400"></i>
+          <div>
+            <h4 class="font-bold">Share Prescription</h4>
+            <p class="text-sm text-blue-100">
+              Send your prescription through WhatsApp.
+            </p>
+          </div>
+        </a>
+
+        <a href="https://wa.me/917400117557?text=Hello%20Metro%20Chemist%2C%20please%20check%20medicine%20availability."
+          target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-4 bg-white/10
+          hover:bg-white/20 p-4 rounded-xl mb-4">
+          <i class="fa-solid fa-pills text-2xl text-green-400"></i>
+          <div>
+            <h4 class="font-bold">Check Medicine Availability</h4>
+            <p class="text-sm text-blue-100">
+              Ask about stock and prices.
+            </p>
+          </div>
+        </a>
+
+        <a href="tel:+917400117557"
+          class="flex items-center gap-4 bg-white/10
+          hover:bg-white/20 p-4 rounded-xl">
+          <i class="fa-solid fa-phone text-2xl text-green-400"></i>
+          <div>
+            <h4 class="font-bold">Call Our Store</h4>
+            <p class="text-sm text-blue-100">
+              +91 7400117557
+            </p>
+          </div>
+        </a>
+
+        <p class="text-xs text-blue-100 mt-5 leading-5">
+          Prescription medicines are subject to valid prescription
+          requirements and pharmacist review.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="max-w-7xl mx-auto px-4 py-10">
+    <div class="grid md:grid-cols-3 gap-5">
+
+      <div class="bg-white p-6 rounded-2xl shadow-md border-b-4 border-green-500">
+        <i class="fa-solid fa-clock text-3xl text-green-600"></i>
+        <h3 class="text-xl font-bold mt-4">24 Hours Open</h3>
+        <p class="text-slate-500 mt-2 text-sm">
+          Store hours are listed as 24 hours, all days.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md border-b-4 border-blue-600">
+        <i class="fa-solid fa-truck-fast text-3xl text-blue-600"></i>
+        <h3 class="text-xl font-bold mt-4">Home Delivery</h3>
+        <p class="text-slate-500 mt-2 text-sm">
+          Delivery enquiries from 9 AM to 11 PM.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-md border-b-4 border-purple-600">
+        <i class="fa-solid fa-heart-pulse text-3xl text-purple-600"></i>
+        <h3 class="text-xl font-bold mt-4">Healthcare Essentials</h3>
+        <p class="text-slate-500 mt-2 text-sm">
+          Ask about available medicines and healthcare products.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="max-w-7xl mx-auto px-4 py-16">
+
+    <div class="text-center max-w-2xl mx-auto">
+      <p class="text-green-700 font-bold uppercase tracking-widest text-sm">
+        OUR SERVICES
+      </p>
+
+      <h2 class="text-3xl md:text-4xl font-black text-blue-950 mt-3">
+        Complete Healthcare Solutions
+      </h2>
+
+      <p class="text-slate-500 mt-4">
+        Contact us to confirm product availability and ordering details.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+
+      <div class="service-card bg-white p-7 rounded-2xl border shadow-sm">
+        <i class="fa-solid fa-pills text-4xl text-blue-600"></i>
+        <h3 class="font-bold text-xl mt-5">Prescription Medicines</h3>
+        <p class="text-sm text-slate-500 mt-3 leading-6">
+          Enquire about prescribed medicines and submit a valid prescription
+          for pharmacist review.
+        </p>
+      </div>
+
+      <div class="service-card bg-white p-7 rounded-2xl border shadow-sm">
+        <i class="fa-solid fa-leaf text-4xl text-green-600"></i>
+        <h3 class="font-bold text-xl mt-5">Generic & Ayurvedic</h3>
+        <p class="text-sm text-slate-500 mt-3 leading-6">
+          Ask about available generic medicines and Ayurvedic products.
+        </p>
+      </div>
+
+      <div class="service-card bg-white p-7 rounded-2xl border shadow-sm">
+        <i class="fa-solid fa-baby text-4xl text-pink-600"></i>
+        <h3 class="font-bold text-xl mt-5">Baby & Mother Care</h3>
+        <p class="text-sm text-slate-500 mt-3 leading-6">
+          Enquire about baby-care items, diapers and maternity essentials.
+        </p>
+      </div>
+
+      <div class="service-card bg-white p-7 rounded-2xl border shadow-sm">
+        <i class="fa-solid fa-capsules text-4xl text-purple-600"></i>
+        <h3 class="font-bold text-xl mt-5">Wellness & OTC</h3>
+        <p class="text-sm text-slate-500 mt-3 leading-6">
+          Ask about vitamins, supplements, personal care and eligible
+          over-the-counter products.
+        </p>
+      </div>
+
+      <div class="service-card bg-white p-7 rounded-2xl border shadow-sm">
+        <i class="fa-solid fa-kit-medical text-4xl text-red-600"></i>
+        <h3 class="font-bold text-xl mt-5">Medical Supplies</h3>
+        <p class="text-sm text-slate-500 mt-3 leading-6">
+          Check availability of first-aid supplies, bandages and
+          home-care essentials.
+        </p>
+      </div>
+
+      <div class="service-card bg-white p-7 rounded-2xl border shadow-sm">
+        <i class="fa-solid fa-truck text-4xl text-cyan-600"></i>
+        <h3 class="font-bold text-xl mt-5">Home Delivery</h3>
+        <p class="text-sm text-slate-500 mt-3 leading-6">
+          Contact us to confirm delivery coverage, timings and charges.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHATSAPP ORDER FORM -->
+  <section id="order" class="bg-blue-950 py-16 md:py-20 text-white">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
+
+      <div class="flex flex-col justify-center">
+        <p class="text-green-400 font-bold uppercase tracking-widest text-sm">
+          QUICK ORDER
+        </p>
+
+        <h2 class="text-3xl md:text-4xl font-black mt-4">
+          Order Medicines on WhatsApp
+        </h2>
+
+        <p class="text-blue-100 leading-7 mt-5">
+          Fill in the form to prepare a medicine enquiry message.
+          You can also attach your prescription directly in WhatsApp.
+        </p>
+
+        <div class="mt-8 space-y-4 text-sm">
+          <p><i class="fa-solid fa-check text-green-400 mr-3"></i>
+            Check availability and pricing</p>
+          <p><i class="fa-solid fa-check text-green-400 mr-3"></i>
+            Ask about delivery</p>
+          <p><i class="fa-solid fa-check text-green-400 mr-3"></i>
+            Send prescription images through WhatsApp</p>
+        </div>
+
+        <p class="mt-8 text-sm text-blue-100 leading-6">
+          Privacy: this website form does not store your details.
+          The message is prepared for WhatsApp; you must review and send it.
+        </p>
+      </div>
+
+      <form id="orderForm"
+        class="bg-white text-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
+
+        <h3 class="text-2xl font-black text-blue-950">
+          Medicine Enquiry Form
+        </h3>
+
+        <p class="text-sm text-slate-500 mt-2 mb-6">
+          Fields marked * are required.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+
+          <div>
+            <label for="customerName" class="block font-bold text-sm mb-2">
+              Your Name *
+            </label>
+            <input id="customerName" name="customerName"
+              type="text" required maxlength="80" autocomplete="name"
+              class="w-full border rounded-xl px-4 py-3"
+              placeholder="Enter your name">
+          </div>
+
+          <div>
+            <label for="customerPhone" class="block font-bold text-sm mb-2">
+              Mobile Number *
+            </label>
+            <input id="customerPhone" name="customerPhone"
+              type="tel" required maxlength="20"
+              pattern="[0-9+() -]{8,20}" autocomplete="tel"
+              class="w-full border rounded-xl px-4 py-3"
+              placeholder="Enter mobile number">
+          </div>
+
+          <div class="sm:col-span-2">
+            <label for="medicineList" class="block font-bold text-sm mb-2">
+              Medicine Name / Details *
+            </label>
+            <textarea id="medicineList" name="medicineList"
+              rows="4" required maxlength="1200"
+              class="w-full border rounded-xl px-4 py-3"
+              placeholder="Medicine name, strength, quantity or enquiry"></textarea>
+          </div>
+
+          <div>
+            <label for="orderType" class="block font-bold text-sm mb-2">
+              Enquiry Type
+            </label>
+            <select id="orderType" name="orderType"
+              class="w-full border rounded-xl px-4 py-3 bg-white">
+              <option>Check Availability and Price</option>
+              <option>Home Delivery</option>
+              <option>Prescription Order</option>
+              <option>Generic Medicine Enquiry</option>
+              <option>Ayurvedic Products</option>
+              <option>Other Healthcare Products</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="pinCode" class="block font-bold text-sm mb-2">
+              Area / PIN Code
+            </label>
+            <input id="pinCode" name="pinCode"
+              type="text" maxlength="100" autocomplete="postal-code"
+              class="w-full border rounded-xl px-4 py-3"
+              placeholder="Area or PIN code">
+          </div>
+
+          <div class="sm:col-span-2">
+            <button type="submit"
+              class="w-full bg-green-600 hover:bg-green-700
+              text-white font-bold rounded-xl py-4">
+              <i class="fa-brands fa-whatsapp text-xl mr-2"></i>
+              Continue to WhatsApp
+            </button>
+
+            <p class="text-xs text-slate-500 mt-3 leading-5">
+              The order is not confirmed until the store replies.
+              Prescription images should be attached in WhatsApp.
+            </p>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="about" class="max-w-7xl mx-auto px-4 py-16 md:py-20">
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <p class="text-green-700 font-bold uppercase tracking-widest text-sm">
+          WHY METRO CHEMIST
+        </p>
+
+        <h2 class="text-3xl md:text-4xl font-black text-blue-950 mt-4">
+          Helpful Service, Clear Communication
+        </h2>
+
+        <p class="text-slate-600 mt-5 leading-7">
+          Our goal is to make medicine enquiries convenient.
+          Contact the store to confirm product availability, pricing,
+          prescription requirements and delivery options.
+        </p>
+
+        <div class="mt-8 space-y-6">
+
+          <div class="flex gap-4">
+            <i class="fa-solid fa-comments text-2xl text-green-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold">Easy Communication</h3>
+              <p class="text-sm text-slate-500 mt-1">
+                Call or message us with your medicine enquiry.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <i class="fa-solid fa-clock text-2xl text-blue-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold">Store Hours</h3>
+              <p class="text-sm text-slate-500 mt-1">
+                Listed as open 24 hours, all days.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <i class="fa-solid fa-shield-heart text-2xl text-purple-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold">Responsible Medicine Supply</h3>
+              <p class="text-sm text-slate-500 mt-1">
+                Prescription medicines require appropriate documentation
+                and pharmacist review.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- STORE DETAILS -->
+      <div class="bg-gradient-to-br from-blue-50 to-green-50 p-6 md:p-10 rounded-3xl">
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
+
+          <i class="fa-solid fa-location-dot text-4xl text-blue-700"></i>
+
+          <h3 class="text-2xl font-black text-blue-950 mt-5">
+            Visit Our Store
+          </h3>
+
+          <p class="text-slate-600 mt-4 leading-7">
+            Shop No. 7, Ground Floor, Dreamx Heights,<br>
+            CTS No. 1, Rajmata Jijabai Road, Mogra,<br>
+            Andheri East, Mumbai - 400093
+          </p>
+
+          <div class="mt-5 space-y-3">
+            <p>
+              <i class="fa-solid fa-phone text-blue-600 mr-2"></i>
+              <a href="tel:+917400117557" class="font-bold hover:text-blue-700">
+                +91 7400117557
+              </a>
+            </p>
+
+            <p>
+              <i class="fa-brands fa-whatsapp text-green-600 mr-2"></i>
+              <a href="https://wa.me/917400117557"
+                target="_blank" rel="noopener noreferrer"
+                class="font-bold hover:text-green-700">
+                WhatsApp Us
+              </a>
+            </p>
+
+            <p>
+              <i class="fa-regular fa-clock text-blue-600 mr-2"></i>
+              <span class="font-semibold">Store: 24 Hours</span>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-truck text-blue-600 mr-2"></i>
+              <span class="font-semibold">Delivery: 9 AM - 11 PM</span>
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3 mt-7">
+
+            <a href="https://maps.app.goo.gl/ZR4qx3wxrhGaEWKM7"
+              target="_blank" rel="noopener noreferrer"
+              class="flex-1 text-center bg-blue-700 text-white
+              font-bold p-3 rounded-xl hover:bg-blue-800">
+              <i class="fa-solid fa-diamond-turn-right mr-2"></i>
+              Directions
+            </a>
+
+            <a href="tel:+917400117557"
+              class="flex-1 text-center bg-slate-100
+              font-bold p-3 rounded-xl hover:bg-slate-200">
+              <i class="fa-solid fa-phone mr-2"></i>
+              Call Store
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white border-y py-16">
+    <div class="max-w-4xl mx-auto px-4">
+
+      <div class="text-center mb-10">
+        <p class="text-green-700 font-bold uppercase tracking-widest text-sm">
+          FAQ
+        </p>
+        <h2 class="text-3xl font-black text-blue-950 mt-3">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+
+        <details class="border rounded-xl p-5">
+          <summary class="font-bold cursor-pointer">
+            Is Metro Chemist open 24 hours?
+          </summary>
+          <p class="text-slate-600 text-sm mt-3 leading-6">
+            The store hours provided list the pharmacy as open 24 hours.
+            Please call before travelling to confirm.
+          </p>
+        </details>
+
+        <details class="border rounded-xl p-5">
+          <summary class="font-bold cursor-pointer">
+            What are the delivery timings?
+          </summary>
+          <p class="text-slate-600 text-sm mt-3 leading-6">
+            Delivery enquiries are listed from 9 AM to 11 PM.
+            Confirm delivery coverage, charges and timing with the store.
+          </p>
+        </details>
+
+        <details class="border rounded-xl p-5">
+          <summary class="font-bold cursor-pointer">
+            How do I send my prescription?
+          </summary>
+          <p class="text-slate-600 text-sm mt-3 leading-6">
+            Open WhatsApp using the order button and attach a clear
+            image of your valid prescription in the chat.
+          </p>
+        </details>
+
+        <details class="border rounded-xl p-5">
+          <summary class="font-bold cursor-pointer">
+            Can I check medicine prices before ordering?
+          </summary>
+          <p class="text-slate-600 text-sm mt-3 leading-6">
+            Yes. Send the medicine name, strength and quantity.
+            The store can confirm current pricing and availability.
+          </p>
+        </details>
+
+        <details class="border rounded-xl p-5">
+          <summary class="font-bold cursor-pointer">
+            Does the form automatically confirm my order?
+          </summary>
+          <p class="text-slate-600 text-sm mt-3 leading-6">
+            No. The form prepares a WhatsApp message. You must send it,
+            and the store must confirm the order.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section id="contact" class="max-w-7xl mx-auto px-4 py-16">
+    <div class="bg-slate-900 text-white rounded-3xl p-7 md:p-10
+      flex flex-col lg:flex-row items-center justify-between gap-8">
+
+      <div>
+        <p class="text-green-400 font-bold uppercase tracking-widest text-sm">
+          NEED ASSISTANCE?
+        </p>
+        <h2 class="text-3xl font-black mt-3">
+          Contact Metro Chemist
+        </h2>
+        <p class="text-slate-300 mt-3 leading-7">
+          Call us or message us to check medicine availability
+          and delivery information.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="tel:+917400117557"
+          class="bg-white text-slate-900 px-6 py-4 rounded-xl
+          font-bold text-center hover:bg-slate-100">
+          <i class="fa-solid fa-phone mr-2"></i>
+          Call Now
+        </a>
+
+        <a href="https://wa.me/917400117557"
+          target="_blank" rel="noopener noreferrer"
+          class="bg-green-600 text-white px-6 py-4 rounded-xl
+          font-bold text-center hover:bg-green-700">
+          <i class="fa-brands fa-whatsapp mr-2"></i>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-950 text-blue-100 py-10 px-4">
+
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div>
+        <h2 class="text-xl font-black text-white">METRO CHEMIST</h2>
+        <p class="text-sm text-blue-200 mt-3 leading-6">
+          Your healthcare partner in Andheri East, Mumbai.
+          Contact us for medicine availability and delivery details.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-white">Quick Links</h3>
+        <div class="grid grid-cols-2 gap-3 mt-4 text-sm">
+          <a href="#home" class="hover:text-green-400">Home</a>
+          <a href="#services" class="hover:text-green-400">Services</a>
+          <a href="#order" class="hover:text-green-400">Order Medicines</a>
+          <a href="#about" class="hover:text-green-400">About Us</a>
+          <a href="#contact" class="hover:text-green-400">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-white">Store Address</h3>
+        <p class="text-sm text-blue-200 mt-4 leading-6">
+          Shop No. 7, Ground Floor, Dreamx Heights,
+          CTS No. 1, Rajmata Jijabai Road, Mogra,
+          Andheri East, Mumbai - 400093
+        </p>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-blue-900
+      flex flex-col sm:flex-row justify-between gap-3 text-xs text-blue-300">
+
+      <p>
+        &copy; <span id="year"></span> Metro Chemist.
+        All Rights Reserved.
+      </p>
+
+      <p>
+        Medicine supply subject to applicable laws and prescription requirements.
+      </p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/917400117557?text=Hello%20Metro%20Chemist%2C%20I%20need%20assistance."
+    target="_blank" rel="noopener noreferrer"
+    aria-label="Chat with Metro Chemist on WhatsApp"
+    class="fixed bottom-5 right-5 z-50 bg-green-600 hover:bg-green-700
+    text-white w-14 h-14 rounded-full shadow-2xl
+    flex items-center justify-center text-3xl">
+
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Update copyright year automatically.
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Prepare medicine enquiry message for WhatsApp.
+    document.getElementById("orderForm").addEventListener(
+      "submit",
+      function(event) {
+        event.preventDefault();
+
+        const form = this;
+
+        if (!form.reportValidity()) {
+          return;
+        }
+
+        const name = document
+          .getElementById("customerName").value.trim();
+
+        const phone = document
+          .getElementById("customerPhone").value.trim();
+
+        const medicines = document
+          .getElementById("medicineList").value.trim();
+
+        const orderType = document
+          .getElementById("orderType").value;
+
+        const area = document
+          .getElementById("pinCode").value.trim()
+          || "Not provided";
+
+        const message = [
+          "Hello Metro Chemist,",
+          "",
+          "I would like to make a medicine enquiry.",
+          "Name: " + name,
+          "Contact number: " + phone,
+          "Enquiry type: " + orderType,
+          "Medicine details: " + medicines,
+          "Area / PIN code: " + area,
+          "",
+          "Please confirm availability, pricing and delivery details.",
+          "Thank you."
+        ].join("\n");
+
+        const whatsappURL =
+          "https://wa.me/917400117557?text=" +
+          encodeURIComponent(message);
+
+        window.open(
+          whatsappURL,
+          "_blank",
+          "noopener,noreferrer"
+        );
+      }
+    );
+  </script>
+
+</body>
+</html>
